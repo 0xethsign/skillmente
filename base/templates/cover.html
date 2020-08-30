@@ -86,7 +86,7 @@
                     <a href="#" id="title">SkillMente</a>
                 </div>
                 <div>
-                    <a href="#scrolldown" id="career">Careers</a>
+                    <a href="#teachwithus" id="career">Careers</a>
                 </div>
     </div>
     <div class="midback">
@@ -149,7 +149,7 @@
     <!--NOT RESPOSIVE below this working on it -->
 
 
-    <div class="teachParent" id="scrolldown">
+    <div class="teachParent" id="teachwithus">
         <div class="teachtitle" ><b>Teach with Us</b></div>
         <div class="teachcontainer">
             <div>
@@ -167,8 +167,8 @@
                     </div>   {% endcomment %}
                   <div class="teachtext"><b>Inspire young minds to be more <br>creative and innovative.</b></div>
                 <div class="teachte1">
-			                    Register Now for <span style="color: #FFCF2D; font-size: 40px;">Free</span><br>Go live with us<br>
-			            <button class="teachbtn" href="{% url 'careers' %}"><b>Join Now</b></button>			
+			                    Register Now for <span style="color: #FFCF2D; font-size: 40px;"><b>Free</b></span><br>Go live with us<br>
+			            <form action="{% url 'careers' %}"><button class="teachbtn"><b>Join Now</b></button>	</form>
 		                </div>   
              </div> 
         </div>  

@@ -13,8 +13,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'g@vlaj!4)6i15+hy@z=c@q(ug54&@i)+)t*ogs=3^nd0je*5z9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-ALLOWED_HOSTS = []
+DEBUG = False
+ALLOWED_HOSTS = ['skillmente.herokuapp.com']
 
 
 # Application definition

@@ -109,17 +109,18 @@
                     <a href="#scrolldown" id="career">Careers</a>
                 </div> {% endcomment %}
     </div>
-    <div class="midback">
+    <div class="midback1">
             <img src={% static "res/glasses-01-01-01.png" %} alt="#" id="backimage">
 
-            <div class="form-group formclass1" >
-        <form class="register" method="POST">
+            <div class="form-group formclass" >
+        <form class="register formclass1" method="POST">
             {% csrf_token %}
+            <p style="text-align:center; font-family: Roboto;font-style: normal;font-weight: bold;font-size: 40px;margin:0;color: #FFFFFF;"><b>Teach with us</b></p>
             <input type="text" name="t_name" class="inputtxt" placeholder="Name">
             <input type="text" name="t_email" class="inputtxt" placeholder="Email">
             <input type="text" name="t_contact" class="inputtxt" placeholder="Phone No.">
             <input type="text" name="t_subject" class="inputtxt" placeholder="Subjects">
-            <input type="submit" value="Register" id="btnreg">
+            <input type="submit" value="Submit" id="btnreg">
             </div>
 
             {% comment %} <div class="midtitle">Let them explore</div>

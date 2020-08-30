@@ -103,14 +103,14 @@
 <body>
     <div id="navbar">
                 <div>
-                    <a href="#" id="title">SkillMente</a>
+                    <a href="{% url 'cover' %}" id="title">SkillMente</a>
                 </div>
                 {% comment %} <div>
                     <a href="#scrolldown" id="career">Careers</a>
                 </div> {% endcomment %}
     </div>
     <div class="midback1">
-            <img src={% static "res/glasses-01-01-01.png" %} alt="#" id="backimage">
+            <img src={% static "res/glasses-01-01-01.png" %} alt="#" class="backimage1">
 
             <div class="form-group formclass" >
         <form class="register formclass1" method="POST">

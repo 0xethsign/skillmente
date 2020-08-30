@@ -83,7 +83,7 @@
 <body>
     <div id="navbar">
                 <div>
-                    <a href="#" id="title">SkillMente</a>
+                    <a href="{% url 'cover' %}" id="title">SkillMente</a>
                 </div>
                 <div>
                     <a href="#teachwithus" id="career">Careers</a>
@@ -168,8 +168,10 @@
                   <div class="teachtext"><b>Inspire young minds to be more <br>creative and innovative.</b></div>
                 <div class="teachte1">
 			                    Register Now for <span style="color: #FFCF2D; font-size: 40px;"><b>Free</b></span><br>Go live with us<br>
-			            <form action="{% url 'careers' %}"><button class="teachbtn"><b>Join Now</b></button>	</form>
+			            <a href="{% url 'careers' %}" class="teachbtn" style="text-decoration:none;"> <b>Join Now</b>	</a>
 		                </div>   
+
+                        {% comment %} <button class="teachbtn" > {% endcomment %}
              </div> 
         </div>  
     </div>

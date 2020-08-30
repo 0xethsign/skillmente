@@ -1,0 +1,652 @@
+{% comment %} {% extends 'base.html' %} {% endcomment %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <title>Welcome to SkillMente</title>
+    <script src="JS/jquery-1.8.2.min.js"></script>
+    <script>
+   $(document).ready(function(){
+			$("#teachbtn").click(function(){
+				$("#lowvis").show();
+                $("#joinus").show();
+				});
+			});
+        var res1;
+        var res2;
+        var res3;
+        $("#name").blur(function(){
+            var r=/^[a-zA-Z ]*$/;
+            var name= $(this).val();
+            res1= r.test(name);
+            if(res1==false)
+                {
+                    alert("Invalid Name");
+                }
+            else 
+            if(name=="")
+                   { 
+                       alert("Fill in your name please");
+                   }
+        });
+         $("#email").blur(function(){
+            var r=/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+            var name= $(this).val();
+            res2= r.test(name);
+            if(res2==false)
+                {
+                    alert("Invalid Email");
+                }
+            else 
+            if(name=="")
+                   { 
+                       alert("Fill in your email please");
+                   }
+        });    
+        $("#mob").blur(function(){
+            var r=/^[6-9]{1}[0-9]{9}$/;
+            var name= $(this).val();
+            res3= r.test(name);
+            if(res3==false)
+                {
+                    alert("Invalid Mobile no.");
+                }
+            else 
+            if(name=="")
+                   { 
+                       alert("Fill in your contact please");
+                   }
+        });    
+        
+        $("#subdata").click(function(){
+            if(res1&&res2&&res3==true)
+                {
+                   alert("saving to database");
+                }
+            else{
+                alert("Please enter valid details");
+            }
+        });
+        
+		
+    </script>
+    <style>
+        #navbar {
+            position: absolute;
+            width: 1440px;
+            height: 91px;
+            left: 0px;
+            top: 0px;
+
+            background: #F8F8F8;
+        }
+
+        #title {
+            position: absolute;
+            width: 231px;
+            height: 48px;
+            left: 33px;
+            top: 18px;
+
+            font-family: Quicksand;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 47px;
+            line-height: 59px;
+            display: flex;
+            align-items: center;
+
+            color: #5B5B5C;
+        }
+
+        #career {
+            position: absolute;
+            width: 115px;
+            height: 48px;
+            left: 1272px;
+            top: 22px;
+
+            font-family: Quicksand;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 37px;
+            display: flex;
+            align-items: center;
+
+            color: #000000;
+        }
+
+        #midback {
+            position: absolute;
+            width: 1050px;
+            height: 542px;
+            left: 222px;
+            top: 107px;
+
+            background: url({% static "res/glasses-01-01-01.png" %}); 
+            background-size: contain;
+        }
+
+        #midtitle {
+            position: absolute;
+            width: 742px;
+            height: 98px;
+            left: 99px;
+            top: 170px;
+
+            font-family: Quicksand;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 90px;
+
+
+            align-items: center;
+            text-align: center;
+
+            color: #5B5B5C;
+        }
+
+        #midtext {
+            position: absolute;
+            width: 897px;
+            height: 92px;
+            left: 40px;
+            top: 313px;
+
+            font-family: 'Quicksand';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 30px;
+            display: flex;
+            align-items: center;
+
+
+            color: #636363;
+        }
+
+        #regmsg {
+            position: absolute;
+            width: 468px;
+            height: 54px;
+            left: 286px;
+            top: 443px;
+
+            font-family: Quicksand;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 40px;
+
+
+        }
+
+        #register {
+            position: absolute;
+            width: 266.78px;
+            height: 289.29px;
+            left: 586.22px;
+            top: 627px;
+
+            background: #6CCECE;
+            border-radius: 21px;
+        }
+
+        .inputtxt {
+            position: absolute;
+            width: 200px;
+            height: 46.15px;
+
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 20px;
+            text-align: center;
+            background: #FFFFFF;
+            border-radius: 16px;
+            margin-left: 11%;
+        }
+
+        #btnreg {
+            position: absolute;
+            width: 205.87px;
+            height: 52.1px;
+            margin-top: 78%;
+            margin-left: 12%;
+            background: #FA6900;
+            border-radius: 28px;
+            font-family: Quicksand;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 26px;
+            color: #FFFFFF;
+            cursor: pointer;
+
+        }
+
+        #info {
+            position: absolute;
+            width: 1315px;
+            height: 736px;
+            left: 63px;
+            top: 963px;
+
+            background: #FFF9DC;
+            border-radius: 85px;
+        }
+
+        #infotitle {
+            font-family: Quicksand;
+            font-style: normal;
+            font-weight: 500;
+
+            font-size: 85px;
+            line-height: 109px;
+            text-align: center;
+            color: #2C2C2C;
+        }
+
+        .flexr {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+        }
+
+        #child {
+            width: 362px;
+            height: 362px;
+            background: url({% static "res/New%20subject%20kids-01.png" %}); 
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin-left: auto;
+        }
+
+        #teacher {
+            width: 362px;
+            height: 362px;
+            background: url({% static "res/female%20teacher-01.png" %}); 
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin-left: auto;
+        }
+
+        .childti {
+            width: 414px;
+            height: 86px;
+            font-family: Quicksand;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 45px;
+            text-align: center;
+
+            color: #2C2C2C;
+        }
+
+        .childte {
+            width: 351px;
+            height: 109px;
+            font-family: Quicksand;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 27px;
+            text-align: center;
+            color: #2C2C2C;
+        }
+
+        #teachti {
+            position: absolute;
+            width: 872px;
+            height: 105px;
+            left: 469px;
+            top: 1803px;
+
+            font-family: Quicksand;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 87px;
+            line-height: 109px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+            color: #FFCF2D;
+        }
+
+        #teachpic {
+            position: absolute;
+            width: 594px;
+            height: 507px;
+            background: url({% static "res/Teacher%20new%20form-01.png" %}); 
+            background-repeat: no-repeat;
+            background-size: contain;
+            left: 103px;
+            top: 1930px;
+        }
+
+        #teachte {
+            position: absolute;
+            width: 540px;
+            height: 117px;
+            left: 787px;
+            top: 2013px;
+
+            font-family: Quicksand;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 37px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+            color: #414141;
+        }
+
+        #teachte1 {
+            position: absolute;
+            width: 456px;
+            height: 145px;
+            left: 811px;
+            top: 2184px;
+
+            font-family: Quicksand;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 39px;
+            line-height: 49px;
+            text-align: center;
+
+            color: #000000;
+
+
+        }
+
+        #teachbtn {
+            position: absolute;
+            width: 302px;
+            height: 67px;
+            left: 892px;
+            top: 2329px;
+
+            background: #FFCF2D;
+            border-radius: 33.5px;
+            font-family: Quicksand;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 41px;
+            line-height: 51px;
+            cursor: pointer;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        #social {
+            position: absolute;
+            width: 894px;
+            height: 83px;
+            left: 273px;
+            top: 2549px;
+            font-family: Quicksand;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 46px;
+            line-height: 57px;
+            text-align: center;
+            color: #000000;
+        }
+
+        .socialflex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        #fb {
+            background: url({% static "res/iconfinder_1_Facebook2_colored_svg_5296500.png" %}); 
+            position: absolute;
+            width: 50.77px;
+            height: 50.77px;
+            left: 546.66px;
+            top: 2650px;
+            background-size: contain;
+        }
+
+        #tw {
+            position: absolute;
+            width: 50.77px;
+            height: 50.77px;
+            left: 645.43px;
+            top: 2650px;
+            background: url({% static "res/iconfinder_1_Twitter_colored_svg_5296514.png" %}); 
+            background-size: contain;
+        }
+
+        #ig {
+            position: absolute;
+            width: 50.77px;
+            height: 50.77px;
+            left: 744.2px;
+            top: 2650px;
+            background: url({% static "res/iconfinder_1_Instagram_colored_svg_1_5296765%20.png" %}); 
+            background-size: contain;
+        }
+
+        #lin {
+            position: absolute;
+            width: 51.69px;
+            height: 50.77px;
+            left: 842.97px;
+            top: 2650px;
+
+            background: url({% static "res/iconfinder_1_Linkedin_unofficial_colored_svg_5296501.png" %});
+            background-size: contain;
+        }
+
+        #hr {
+            position: absolute;
+            width: 1500px;
+            height: 0px;
+            left: 0px;
+            top: 2730px;
+
+            border: 2px solid #000000;
+        }
+
+        #end {
+            position: absolute;
+            width: 683px;
+            height: 71.9px;
+            left: 356px;
+            top: 2764px;
+
+            font-family: Quicksand;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 52px;
+            line-height: 65px;
+            text-align: center;
+        }
+
+        #copyr {
+            position: absolute;
+            width: 449px;
+            height: 54px;
+            left: 496px;
+            top: 2853px;
+            font-family: Quicksand;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 25px;
+            line-height: 31px;
+            text-align: center;
+        }
+
+        #joinus {
+            position: fixed;
+            width: 361px;
+            height: 447px;
+            background: #6CCECE;
+            border-radius: 21px;
+            margin-top: 10%;
+            margin-left: 40%;
+            border: 3px solid #f1f1f1;
+            display: none;
+            z-index: 10;
+        }
+        #lowvis{
+            width: 100%;height: 100%;
+            background-color: gray;
+            opacity: 90%;
+            position: fixed; z-index: 1;
+			display: none;
+        }
+
+        #inpti {
+
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 47px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        .inpdata {
+
+            width: 333.79px;
+            height: 55.33px;
+
+            background: #FFFFFF;
+            border-radius: 16px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 23px;
+            margin-top: 2%;
+            margin-left: 2%;
+            text-align: center;
+
+        }
+
+        #subdata {
+
+            width: 182.68px;
+            height: 40.73px;
+            background: #FB5607;
+            border-radius: 18.5px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 29px;
+            line-height: 34px;
+            text-align: center;
+            color: #FFFFFF;
+            margin-left: 25%;
+            margin-top: 12%;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="lowvis"></div>
+    {% comment %} <div id="navbar">
+        <nav>
+            <ul style="list-style: none">
+                <li>
+                    <div id="title">SkillMente</div>
+                </li>
+                <li>
+                    <div id="career">Careers</div>
+                </li>
+            </ul>
+        </nav>
+    </div> {% endcomment %}
+    <div id="midback">
+        <div id="midtitle">Let them explore</div>
+        <div id="midtext">Skill Mente is India's first student centric Education platform designed to make<br> kids explore and learn about a whole bunch of different career options and life skills.</div>
+        <div id="regmsg"> Register for <font color="blue">FREE</font> now</div>
+    </div>
+    <div id="register">
+<form method="POST">
+{% csrf_token %}
+
+{{form.as_p}}
+
+<button class="btn btn-secondary" >Submit</button>
+
+</div>
+    {% comment %} <div id="register">
+        <input type="text" class="inputtxt" placeholder="Name" style="margin-top:19%">
+        <input type="text" class="inputtxt" placeholder="Email" style="margin-top:48%">
+        <input type="button" value="Register" id="btnreg">
+    </div> {% endcomment %}
+    <div id="info">
+        <div id="infotitle">Skill Mente</div>
+        <div class="flexr">
+            <div>
+                <div id="child"></div>
+                <div>
+                    <div class="childti">
+                        Explore More
+                    </div>
+                    <div class="childte">Explore subjects like astronomy, design, art, engineering and many more with specially designed courses by experts</div>
+                </div>
+            </div>
+            <div>
+                <div id="teacher"></div>
+                <div>
+                    <div class="childti">
+                        Live Interactive Classes
+                    </div>
+                    <div class="childte">Live interactive classes with real tutors that helps kids to have a better and deep understanding of topics and elevates learning</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div id="teachti">Teach with Us</div>
+        <div id="teachpic"></div>
+        <div>
+            <div id="teachte">Inspire young minds to be more creative and innovative.</div>
+            <div id="teachte1">Register Now for <font color="#FFCF2D">FREE</font><br>Go live with us</div>
+            <div>
+                <input type="button" value="Join now" id="teachbtn" >
+            </div>
+        </div>
+    </div>
+    <div id="joinus">
+
+        <div id="inpti">Teach with us</div>
+        <input type="text" class="inpdata" placeholder="Name" id="name" required autocomplete="off">
+        <input type="text" class="inpdata" placeholder="Email" id="email" required autocomplete="off">
+        <input type="text" class="inpdata" placeholder="Contact" id="mob" required autocomplete="off">
+        <input type="text" class="inpdata" placeholder="Subjects" id="subj" required autocomplete="off">
+        <input type="button" id="subdata" value="Submit">
+    </div>
+    <div id="social"> Connect with us on our social network</div>
+    <div class="socialflex">
+        <a href="https://www.facebook.com/skillmente" target="_blank" id="fb"></a>
+        <a href="https://twitter.com/SkillMente" target="_blank" id="tw"></a>
+        <a href="https://www.instagram.com/skillmente/" id="ig" target="_blank"></a>
+        <a href="https://www.linkedin.com/company/skillmente/" target="_blank" id="lin"></a>
+    </div>
+    <div id="hr"></div>
+    <div id="end">Created with <img src="{% static "res/heart.png" %}" alt="My image" height="50" width="55"> in India</div>
+    <div id="copyr"> © 2020 SkillMente. All rights reserved.</div>
+    
+</body>
+
+</html>
+
+

@@ -1,0 +1,810 @@
+/* {% load static %} */
+body{
+    margin: 0;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+#navbar {
+    max-width: 100vw;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F8F8F8;
+}
+
+#title {
+    text-decoration: none;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+    color: #5B5B5C;
+    margin-left: 42px;
+}
+
+#career {
+    text-decoration: none;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 33px;
+    color: #000000;
+    margin-right: 42px;
+}
+
+.midback {
+    margin: 0 19vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 27vh;
+    /* width: 70vw;
+    min-height: 100vh; */
+    /* background-image: url('./res/glasses-01-01-01.png'); */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+}
+#backimage{
+    position: absolute;
+    height: auto;
+    width: 70vw;
+    z-index: -1;
+}
+.midtitle {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 70px;
+    line-height: 120px;
+    text-align: center;
+
+    color: #5B5B5C;
+}
+
+.midtext {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: #636363;
+}
+
+.regmsg {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 70px;
+    text-align: center;
+}
+
+.register {
+    margin:18vh 00vw 18vh 00vw;
+    height: 280px;
+    background: #6CCECE;
+    border-radius: 21px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    min-width: 350px;
+}
+
+.formclass {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.inputtxt {
+    height: 43px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    margin: 0 15px;
+    /* text-align: center; */
+    background: #FFFFFF;
+    border-radius: 16px;
+    padding: 0px 10px;
+    border-color: #6CCECE;
+    outline: none;
+    border-width: 0;
+    
+    
+}
+
+.inputtxt::placeholder {
+    /* text-align: center; */
+    opacity: 30%;
+    font-family: Roboto;
+    font-style: normal;
+    
+}
+
+#btnreg {
+    background: #FA6900;
+    border-radius: 16px;
+    border-style: none;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    height: 46px;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin: 0 30px;
+}
+
+#info {
+    height: 736px;
+    background: #FFF9DC;
+    border-radius: 70px;
+    margin: 0 5vw;
+}
+
+#infotitle {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+
+    font-size: 70px;
+    line-height: 109px;
+    text-align: center;
+    color: #2C2C2C;
+}
+
+.flexr {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+/* #child {
+    width: 362px;
+    height: 362px;
+    background: url({% static "res/New%20subject%20kids-01.png" %}); 
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: auto;
+} */
+
+/* #teacher {
+    width: 362px;
+    height: 362px;
+    background: url({% static "res/female%20teacher-01.png" %}); 
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: auto;
+} */
+
+.childti {
+    width: 414px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 70px;
+    text-align: center;
+
+    color: #2C2C2C;
+}
+
+.childte {
+    width: 414px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 26px;
+    text-align: center;
+    color: #2C2C2C;
+}
+
+
+ /* NOT RESPONSIVE below this working on it.*/
+
+ .teachParent{
+     margin-top:10vh;
+ }
+.teachtitle {
+    height: 105px;
+    font-family: Quicksand;
+    font-style: bold;
+    font-weight: 550;
+    font-size: 70px;
+    line-height: 109px;
+    color: #FFCF2D;
+    text-align: center;
+}
+.teachcontainer{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 5vw;
+}
+.teachpic {
+    width: 559px;
+    height: auto;
+}
+
+.teachchild{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 40px;
+}
+.teachtext {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 37px;
+    text-align: center;
+    color: #414141;
+}
+
+.teachte1 {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 49px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.teachbtn {
+    background: #FFCF2D;
+    border-radius: 30.5px;
+    border-style: none;
+    font-family: Quicksand;
+    font-style: normal;
+    /* font-weight: bold; */
+    font-size: 40px;
+    line-height: 45px;
+    cursor: pointer;
+    text-align: center;
+    color: #FFFFFF;
+    height: 50px;
+    width: 255px;
+}
+
+ .socialparent{
+     margin-top:10vh;
+ }
+.social {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 83px;
+    text-align: center;
+    color: #000000;
+}
+
+.socialflex {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin:0 32vw;
+}
+
+.fb img, .ig img, .lin img, .tw  img {
+    width: 47.77px;
+}
+
+
+hr {
+    margin:4vh 0;
+}
+
+.end {
+font-family: Quicksand;
+font-style: normal;
+font-weight: normal;
+font-size: 25px;
+line-height: 65px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.copyr {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 31px;
+    text-align: center;
+    margin:2vh 0;
+}
+
+.joinus {
+    position: fixed;
+    width: 361px;
+    height: 447px;
+    background: #6CCECE;
+    border-radius: 21px;
+    margin-top: 10%;
+    margin-left: 40%;
+    border: 3px solid #f1f1f1;
+    display: none;
+    z-index: 10;
+}
+.lowvis{
+    width: 100%;height: 100%;
+    background-color: gray;
+    opacity: 90%;
+    position: fixed; z-index: 1;
+    display: none;
+}
+
+.inpti {
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.inpdata {
+
+    width: 333.79px;
+    height: 55.33px;
+
+    background: #FFFFFF;
+    border-radius: 16px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    margin-top: 2%;
+    margin-left: 2%;
+    text-align: center;
+
+}
+
+.subdata {
+
+    width: 182.68px;
+    height: 40.73px;
+    background: #FB5607;
+    border-radius: 18.5px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 29px;
+    line-height: 34px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: 25%;
+    margin-top: 12%;
+    cursor: pointer;
+}
+
+
+
+@media all and (max-width:500px) and (orientation: portrait) {
+    body{
+        margin: 0;
+    }
+    
+    
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    
+    
+    #navbar {
+        max-width: 100vw;
+        height: 90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #F8F8F8;
+    }
+    
+    #title {
+        text-decoration: none;
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 50px;
+        color: #5B5B5C;
+        margin-left: 42px;
+    }
+    
+    #career {
+        text-decoration: none;
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 26px;
+        line-height: 33px;
+        color: #000000;
+        margin-right: 42px;
+    }
+    
+    .midback {
+        margin: 0 19vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 27vh;
+        /* width: 70vw;
+        min-height: 100vh; */
+        /* background-image: url('./res/glasses-01-01-01.png'); */
+        /* background-size: cover; */
+        /* background-repeat: no-repeat; */
+    }
+    #backimage{
+        position: absolute;
+        height: auto;
+        width: 70vw;
+        z-index: -1;
+    }
+    .midtitle {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 70px;
+        line-height: 120px;
+        text-align: center;
+    
+        color: #5B5B5C;
+    }
+    
+    .midtext {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 27px;
+        text-align: center;
+        color: #636363;
+    }
+    
+    .regmsg {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 70px;
+        text-align: center;
+    }
+    
+    .register {
+        margin:18vh 00vw 18vh 00vw;
+        height: 280px;
+        background: #6CCECE;
+        border-radius: 21px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        min-width: 350px;
+    }
+    
+    .formclass {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    
+    .inputtxt {
+        height: 43px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        margin: 0 15px;
+        /* text-align: center; */
+        background: #FFFFFF;
+        border-radius: 16px;
+        padding: 0px 10px;
+        border-color: #6CCECE;
+        outline: none;
+        border-width: 0;
+        
+        
+    }
+    
+    .inputtxt::placeholder {
+        /* text-align: center; */
+        opacity: 30%;
+        font-family: Roboto;
+        font-style: normal;
+        
+    }
+    
+    #btnreg {
+        background: #FA6900;
+        border-radius: 16px;
+        border-style: none;
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 26px;
+        height: 46px;
+        color: #FFFFFF;
+        cursor: pointer;
+        margin: 0 30px;
+    }
+    
+    #info {
+        height: 736px;
+        background: #FFF9DC;
+        border-radius: 70px;
+        margin: 0 5vw;
+    }
+    
+    #infotitle {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: 500;
+    
+        font-size: 70px;
+        line-height: 109px;
+        text-align: center;
+        color: #2C2C2C;
+    }
+    
+    .flexr {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    
+    }
+    
+    /* #child {
+        width: 362px;
+        height: 362px;
+        background: url({% static "res/New%20subject%20kids-01.png" %}); 
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-left: auto;
+    } */
+    
+    /* #teacher {
+        width: 362px;
+        height: 362px;
+        background: url({% static "res/female%20teacher-01.png" %}); 
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-left: auto;
+    } */
+    
+    .childti {
+        width: 414px;
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 70px;
+        text-align: center;
+    
+        color: #2C2C2C;
+    }
+    
+    .childte {
+        width: 414px;
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 25px;
+        line-height: 26px;
+        text-align: center;
+        color: #2C2C2C;
+    }
+    
+    
+     /* NOT RESPONSIVE below this working on it.*/
+    
+     .teachParent{
+         margin-top:10vh;
+     }
+    .teachtitle {
+        height: 105px;
+        font-family: Quicksand;
+        font-style: bold;
+        font-weight: 550;
+        font-size: 70px;
+        line-height: 109px;
+        color: #FFCF2D;
+        text-align: center;
+    }
+    .teachcontainer{
+        display: flex;
+        justify-content: space-around;
+        margin: 0 5vw;
+        flex-wrap: wrap;
+    }
+    .teachpic {
+        width: 559px;
+        height: auto;
+    }
+    
+    .teachchild{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 40px;
+    }
+    .teachtext {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 37px;
+        text-align: center;
+        color: #414141;
+    }
+    
+    .teachte1 {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 49px;
+        text-align: center;
+    
+        color: #000000;
+    }
+    
+    .teachbtn {
+        background: #FFCF2D;
+        border-radius: 30.5px;
+        border-style: none;
+        font-family: Quicksand;
+        font-style: normal;
+        /* font-weight: bold; */
+        font-size: 35px;
+        line-height: 55px;
+        cursor: pointer;
+        text-align: center;
+        color: #FFFFFF;
+        height: 40px;
+        width: 255px;
+    }
+    
+     .socialparent{
+         margin-top:10vh;
+     }
+    .social {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        line-height: 83px;
+        text-align: center;
+        color: #000000;
+    }
+    
+    .socialflex {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin:0 32vw;
+    }
+    
+    .fb img, .ig img, .lin img, .tw  img {
+        width: 47.77px;
+    }
+    
+    
+    hr {
+        margin:4vh 0;
+    }
+    
+    .end {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .copyr {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 31px;
+        text-align: center;
+        margin:2vh 0;
+    }
+    
+    .joinus {
+        position: fixed;
+        width: 361px;
+        height: 447px;
+        background: #6CCECE;
+        border-radius: 21px;
+        margin-top: 10%;
+        margin-left: 40%;
+        border: 3px solid #f1f1f1;
+        display: none;
+        z-index: 10;
+    }
+    .lowvis{
+        width: 100%;height: 100%;
+        background-color: gray;
+        opacity: 90%;
+        position: fixed; z-index: 1;
+        display: none;
+    }
+    
+    .inpti {
+    
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 47px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    
+    .inpdata {
+    
+        width: 333.79px;
+        height: 55.33px;
+    
+        background: #FFFFFF;
+        border-radius: 16px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 23px;
+        margin-top: 2%;
+        margin-left: 2%;
+        text-align: center;
+    
+    }
+    
+    .subdata {
+    
+        width: 182.68px;
+        height: 40.73px;
+        background: #FB5607;
+        border-radius: 18.5px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 29px;
+        line-height: 34px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-left: 25%;
+        margin-top: 12%;
+        cursor: pointer;
+    }
+    
+
+
+}

@@ -468,8 +468,7 @@ align-items: center;
         height: auto;
         width: 70vw;
         z-index: -1;
-        /* left: 346px;
-        top: 80px; */
+        
     }
 
     .backimage1 {
@@ -477,8 +476,7 @@ align-items: center;
         height: auto;
         width: 70vw;
         z-index: -1;
-        left: 346px;
-        top: 80px;
+       
     }
     .midtitle {
         font-family: Quicksand;
@@ -675,7 +673,7 @@ align-items: center;
         font-family: Quicksand;
         font-style: normal;
         /* font-weight: bold; */
-        font-size: 35px;
+        font-size: 25px;
         line-height: 55px;
         cursor: pointer;
         text-align: center;

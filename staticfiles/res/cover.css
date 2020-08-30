@@ -1,4 +1,4 @@
-/* {% load static %} */
+
 body{
     margin: 0;
 }
@@ -47,11 +47,7 @@ html {
     justify-content: center;
     flex-direction: column;
     margin-top: 27vh;
-    /* width: 70vw;
-    min-height: 100vh; */
-    /* background-image: url('./res/glasses-01-01-01.png'); */
-    /* background-size: cover; */
-    /* background-repeat: no-repeat; */
+    
 }
 #backimage{
     position: absolute;
@@ -192,23 +188,7 @@ html {
 
 }
 
-/* #child {
-    width: 362px;
-    height: 362px;
-    background: url({% static "res/New%20subject%20kids-01.png" %}); 
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-left: auto;
-} */
 
-/* #teacher {
-    width: 362px;
-    height: 362px;
-    background: url({% static "res/female%20teacher-01.png" %}); 
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-left: auto;
-} */
 
 .childti {
     width: 414px;
@@ -234,7 +214,7 @@ html {
 }
 
 
- /* NOT RESPONSIVE below this working on it.*/
+
 
  .teachParent{
      margin-top:10vh;
@@ -472,11 +452,7 @@ align-items: center;
         justify-content: center;
         flex-direction: column;
         margin-top: 27vh;
-        /* width: 70vw;
-        min-height: 100vh; */
-        /* background-image: url('./res/glasses-01-01-01.png'); */
-        /* background-size: cover; */
-        /* background-repeat: no-repeat; */
+        
     }
     .midback1{
         margin: 0 19vw;
@@ -484,11 +460,7 @@ align-items: center;
         justify-content: center;
         flex-direction: column;
         margin-top: 27vh;
-        /* width: 70vw;
-        min-height: 100vh; */
-        /* background-image: url('./res/glasses-01-01-01.png'); */
-        /* background-size: cover; */
-        /* background-repeat: no-repeat; */
+        
     }
     
     #backimage {
@@ -616,23 +588,7 @@ align-items: center;
     
     }
     
-    /* #child {
-        width: 362px;
-        height: 362px;
-        background: url({% static "res/New%20subject%20kids-01.png" %}); 
-        background-repeat: no-repeat;
-        background-size: contain;
-        margin-left: auto;
-    } */
     
-    /* #teacher {
-        width: 362px;
-        height: 362px;
-        background: url({% static "res/female%20teacher-01.png" %}); 
-        background-repeat: no-repeat;
-        background-size: contain;
-        margin-left: auto;
-    } */
     
     .childti {
         width: 414px;
@@ -658,7 +614,7 @@ align-items: center;
     }
     
     
-     /* NOT RESPONSIVE below this working on it.*/
+     
     
      .teachParent{
          margin-top:10vh;

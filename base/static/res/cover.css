@@ -63,14 +63,14 @@ html {
     height: auto;
     width: 70vw;
     z-index: -1;
-    top: 123px;
+    
 }
 .backimage1 {
     position: absolute;
     height: auto;
     width: 70vw;
     z-index: -1;
-    top: 123px;
+    
 }
 .midtitle {
     font-family: Quicksand;
@@ -501,7 +501,7 @@ align-items: center;
         height: auto;
         width: 70vw;
         z-index: -1;
-        top: 123px;
+        
     }
 
     .backimage1 {
@@ -510,7 +510,7 @@ align-items: center;
         width: 70vw;
         z-index: -1;
         
-        top: 123px;
+       
     }
     .midtitle {
         font-family: Quicksand;

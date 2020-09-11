@@ -594,7 +594,7 @@ align-items: center;
         background: #FFF9DC;
         border-radius: 10px;
         margin: 0 2vw;
-        height: 735px;
+        height: 765px;
     }
     
     #infotitle {
@@ -633,13 +633,14 @@ align-items: center;
         font-style: normal;
         font-weight: bold;
         font-size: 20px;
-        line-height: 40px;
+        line-height: 25px;
         text-align: center;
     
         color: #2C2C2C;
     }
     
     .childte {
+        margin-top: 18px;
         width: 214px;
         font-family: Quicksand;
         font-style: normal;

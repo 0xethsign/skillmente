@@ -1,4 +1,3 @@
-
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -7,68 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
     <meta charset="UTF-8">
     <title>Welcome to SkillMente</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <script src="JS/jquery-1.8.2.min.js"></script>
     <script>
-   $(document).ready(function(){
-			$("#teachbtn").click(function(){
-				$("#lowvis").show();
+        $(document).ready(function () {
+            $("#teachbtn").click(function () {
+                $("#lowvis").show();
                 $("#joinus").show();
-				});
-			});
+            });
+        });
         var res1;
         var res2;
         var res3;
-        $("#name").blur(function(){
-            var r=/^[a-zA-Z ]*$/;
-            var name= $(this).val();
-            res1= r.test(name);
-            if(res1==false)
-                {
-                    alert("Invalid Name");
+        $("#name").blur(function () {
+            var r = /^[a-zA-Z ]*$/;
+            var name = $(this).val();
+            res1 = r.test(name);
+            if (res1 == false) {
+                alert("Invalid Name");
+            }
+            else
+                if (name == "") {
+                    alert("Fill in your name please");
                 }
-            else 
-            if(name=="")
-                   { 
-                       alert("Fill in your name please");
-                   }
         });
-         $("#email").blur(function(){
-            var r=/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
-            var name= $(this).val();
-            res2= r.test(name);
-            if(res2==false)
-                {
-                    alert("Invalid Email");
+        $("#email").blur(function () {
+            var r = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+            var name = $(this).val();
+            res2 = r.test(name);
+            if (res2 == false) {
+                alert("Invalid Email");
+            }
+            else
+                if (name == "") {
+                    alert("Fill in your email please");
                 }
-            else 
-            if(name=="")
-                   { 
-                       alert("Fill in your email please");
-                   }
-        });    
-        $("#mob").blur(function(){
-            var r=/^[6-9]{1}[0-9]{9}$/;
-            var name= $(this).val();
-            res3= r.test(name);
-            if(res3==false)
-                {
-                    alert("Invalid Mobile no.");
+        });
+        $("#mob").blur(function () {
+            var r = /^[6-9]{1}[0-9]{9}$/;
+            var name = $(this).val();
+            res3 = r.test(name);
+            if (res3 == false) {
+                alert("Invalid Mobile no.");
+            }
+            else
+                if (name == "") {
+                    alert("Fill in your contact please");
                 }
-            else 
-            if(name=="")
-                   { 
-                       alert("Fill in your contact please");
-                   }
-        });    
-        
-        $("#subdata").click(function(){
-            if(res1&&res2&&res3==true)
-                {
-                   alert("saving to database");
-                }
-            else{
+        });
+
+        $("#subdata").click(function () {
+            if (res1 && res2 && res3 == true) {
+                alert("saving to database");
+            }
+            else {
                 alert("Please enter valid details");
             }
         });
@@ -82,57 +74,62 @@
 
 <body>
     <div id="navbar">
-                <div>
-                    <a href="{% url 'cover' %}" id="title">SkillMente</a>
-                </div>
-                <div>
-                    <a href="#teachwithus" id="career">Careers</a>
-                </div>
+        <div>
+            <a href="{% url 'cover' %}" id="title">SkillMente</a>
+        </div>
+        <div>
+            <a href="#teachwithus" id="career">Careers</a>
+        </div>
     </div>
     <div class="midback">
-            <img src={% static "res/glasses-01-01-01.png" %} alt="#" id="backimage" style="opacity: 0.6;">
-            <div class="midtitle">Let them explore</div>
-            <div class="midtext" style="font-size:25px;">Skill Mente is India's first student centric Education platform designed to make<br> kids explore and learn about a whole bunch of different career options and life <br> skills.</div>
-            <div class="regmsg"> Register for <font color="#2FB99F">Free</font> now</div>
+        <img src={% static "res/glasses-01-01-01.png" %} alt="#" id="backimage" style="opacity: 0.6;">
+        <div class="midtitle">Let them explore</div>
+        <div class="midtext">Skill Mente is India's first student centric Education platform
+            designed to make<br> kids explore and learn about a whole bunch of different career options and life <br>
+            skills.</div>
+        <div class=" regmsg"> Register for <font color="#2FB99F"><b>Free</b></font> now</div>
     </div>
-    
-    <div class="form-group formclass" >
+
+    <div class="form-group formclass">
         <form class="register" method="POST" style="height: 266px;width: 351px;">
             {% csrf_token %}
-            <input type="text" name="c_name" class="inputtxt" placeholder="Name" style="width: 300px;height: 54px;">
-            <input type="text" name="c_email" class="inputtxt" placeholder="Email" style="width: 300px;height: 54px;">
+            <input type="text" name="c_name" class="inputtxt" placeholder="Name"
+                style="width: 300px;height: 44px; margin-left: 17px; ">
+            <input type="text" name="c_email" class="inputtxt" placeholder="Email"
+                style="width: 300px;height: 44px; margin-left: 17px;">
             <input type="submit" value="Register" id="btnreg">
             {% comment %} {{form.as_p}} {% endcomment %}
 
-            {% comment %} <button class="btn btn-secondary" >Submit</button> {% endcomment %}
+            {% comment %} <button class="btn btn-secondary">Submit</button> {% endcomment %}
 
     </div>
-        {% comment %} <form action="#" class="register">
-            <input type="text" class="inputtxt" placeholder="Name">
-            <input type="text" class="inputtxt" placeholder="Email">
-            <input type="submit" value="Register" id="btnreg">
-        </form> {% endcomment %}
+    {% comment %} <form action="#" class="register">
+        <input type="text" class="inputtxt" placeholder="Name">
+        <input type="text" class="inputtxt" placeholder="Email">
+        <input type="submit" value="Register" id="btnreg">
+    </form> {% endcomment %}
     </div>
     <div id="info">
         <div id="infotitle"><b>Skill Mente</b></div>
         <div class="flexr">
             <div>
-                <div id="child" style="width: 362px;
-    height: 362px;
+                <div id="child" style="
     background: url('/static/res/New%20subject%20kids-01.png'); 
     background-repeat: no-repeat;
     background-size: contain;
-    margin-left: auto;"></div>
+    margin-left: 18px;
+    "></div>
                 <div>
                     <div class="childti">
                         Explore More
                     </div>
-                    <div class="childte">Explore subjects like astronomy, design, art, engineering and many more with specially designed courses by experts</div>
+                    <div class="childte">Explore subjects like astronomy, design, art, engineering and many more with
+                        specially designed courses by experts</div>
                 </div>
             </div>
             <div>
-                <div id="teacher" style="width: 362px;
-    height: 362px;
+                <div id="teacher" style="
+                align-content: center;
     background: url('/static/res/female%20teacher-01.png'); 
     background-repeat: no-repeat;
     background-size: contain;
@@ -141,62 +138,63 @@
                     <div class="childti">
                         Live Interactive Classes
                     </div>
-                    <div class="childte">Live interactive classes with real tutors that helps kids to have a better and deep understanding of topics and elevates learning</div>
+                    <div class="childte">Live interactive classes with real tutors that helps kids to have a better and
+                        deep understanding of topics and elevates learning</div>
                 </div>
             </div>
         </div>
     </div>
-    <!--NOT RESPOSIVE below this working on it -->
+
 
 
     <div class="teachParent" id="teachwithus">
-        <div class="teachtitle" ><b>Teach with Us</b></div>
+        <div class="teachtitle"><b>Teach with Us</b></div>
         <div class="teachcontainer">
             <div>
                 <img src="{% static "res/Teacher%20new%20form-01.png" %}" alt="My image" class="teachpic">
             </div>
             <div class="teachchild">
-                     {% comment %} <div class="form-group formclass" >
-                        <form class="register" method="POST">
-                            {% csrf_token %}
-                                <input type="text" name="t_name" class="inputtxt" placeholder="Name">
-                                <input type="text" name="t_email" class="inputtxt" placeholder="Email">
-                                <input type="text" name="t_contact" class="inputtxt" placeholder="Phone No.">
-                                <input type="text" name="t_subject" class="inputtxt" placeholder="Subjects">
-                                <input type="submit" value="Register" id="btnreg">
-                    </div>   {% endcomment %}
-                  <div class="teachtext"><b>Inspire young minds to be more <br>creative and innovative.</b></div>
+                {% comment %} <div class="form-group formclass">
+                    <form class="register" method="POST">
+                        {% csrf_token %}
+                        <input type="text" name="t_name" class="inputtxt" placeholder="Name">
+                        <input type="text" name="t_email" class="inputtxt" placeholder="Email">
+                        <input type="text" name="t_contact" class="inputtxt" placeholder="Phone No.">
+                        <input type="text" name="t_subject" class="inputtxt" placeholder="Subjects">
+                        <input type="submit" value="Register" id="btnreg">
+                </div> {% endcomment %}
+                <div class="teachtext"><b>Inspire young minds to be more <br>creative and innovative.</b></div>
                 <div class="teachte1">
-			                    Register Now for <span style="color: #FFCF2D; font-size: 40px;"><b>Free</b></span><br>Go live with us<br>
-			            <a href="{% url 'careers' %}" class="teachbtn" style="text-decoration:none;"> <b>Join Now</b>	</a>
-		                </div>   
+                    <b>Register Now for <span style="color: #FFCF2D; font-size: 28px;"><b>Free</b></span><br>Go live
+                        with
+                        us</b><br>
+                    <a href="{% url 'careers' %}" class="teachbtn" style="text-decoration:none;"> <b>Join Now</b> </a>
+                </div>
 
-                        {% comment %} <button class="teachbtn" > {% endcomment %}
-             </div> 
-        </div>  
+                {% comment %} <button class="teachbtn"> {% endcomment %}
+            </div>
+        </div>
     </div>
-    <!-- <div class="joinus"> -->
-        <!-- <div class="inpti">Teach with us</div> -->
-        <!-- <input type="text" class="inpdata" placeholder="Name" class="name" required autocomplete="off"> -->
-        <!-- <input type="text" class="inpdata" placeholder="Email" class="email" required autocomplete="off"> -->
-        <!-- <input type="text" class="inpdata" placeholder="Contact" class="mob" required autocomplete="off"> -->
-        <!-- <input type="text" class="inpdata" placeholder="Subjects" class="subj" required autocomplete="off"> -->
-        <!-- <input type="button" class="subdata" value="Submit"> -->
-    <!-- </div> -->
+
     <div class="socialparent">
         <div class="social"> Connect with us on our social network</div>
         <div class="socialflex">
-            <a href="https://www.facebook.com/skillmente" target="_blank" class="fb" target="_blank"> <img src="{% static "res/iconfinder_1_Facebook2_colored_svg_5296500.png" alt="" %}" alt=""> </a>
-            <a href="https://twitter.com/SkillMente" target="_blank" class="tw"> <img src="{% static "res/iconfinder_1_Twitter_colored_svg_5296514.png" %}" alt=""></a>
-            <a href="https://www.instagram.com/skillmente/" class="ig" target="_blank"> <img src="{% static "res/iconfinder_1_Instagram_colored_svg_1_5296765 .png" %}" alt=""></a>
-            <a href="https://www.linkedin.com/company/skillmente/" target="_blank" class="lin"> <img src="{% static "res/iconfinder_1_Linkedin_unofficial_colored_svg_5296501.png" %}" alt=""></a>
+            <a href="https://www.facebook.com/skillmente" target="_blank" class="fb" target="_blank"> <img
+                    src="{% static "res/iconfinder_1_Facebook2_colored_svg_5296500.png" alt="" %}" alt=""> </a>
+            <a href="https://twitter.com/SkillMente" target="_blank" class="tw"> <img
+                    src="{% static "res/iconfinder_1_Twitter_colored_svg_5296514.png" %}" alt=""></a>
+            <a href="https://www.instagram.com/skillmente/" class="ig" target="_blank"> <img
+                    src="{% static "res/iconfinder_1_Instagram_colored_svg_1_5296765 .png" %}" alt=""></a>
+            <a href="https://www.linkedin.com/company/skillmente/" target="_blank" class="lin"> <img
+                    src="{% static "res/iconfinder_1_Linkedin_unofficial_colored_svg_5296501.png" %}" alt=""></a>
         </div>
-    
+
     </div>
-    <hr style="opacity:0.4"/>
-    <div class="end">Created with&nbsp<img src="{% static "res/heart.png" %}" alt="My image" height="50" width="55">&nbspin India</div>
+    <hr style="opacity:0.4" />
+    <div class="end">Created with&nbsp<img src="{% static "res/heart.png" %}" alt="My image" height="20"
+            width="20">&nbspin India</div>
     <div class="copyr"> © 2020 SkillMente. All rights reserved.</div>
-    
+
 </body>
 
 </html>

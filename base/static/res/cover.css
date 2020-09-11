@@ -1,4 +1,4 @@
-/* {% load static %} */
+
 body{
     margin: 0;
 }
@@ -49,15 +49,6 @@ html {
     margin-top: 27vh;
     
 }
-
-.midback1{
-    margin: 0 19vw;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 27vh;
-    
-}
 #backimage{
     position: absolute;
     height: auto;
@@ -70,6 +61,7 @@ html {
     height: auto;
     width: 70vw;
     z-index: -1;
+    
     
 }
 .midtitle {
@@ -164,7 +156,7 @@ html {
     border-style: none;
     font-family: Quicksand;
     font-style: normal;
-    font-weight: 900;
+    font-weight: bold;
     font-size: 26px;
     height: 46px;
     color: #FFFFFF;
@@ -197,23 +189,12 @@ html {
 
 }
 
-/* #child {
+#child {
     width: 362px;
-    height: 362px;
-    background: url({% static "res/New%20subject%20kids-01.png" %}); 
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-left: auto;
-} */
+height: 362px;
+}
 
-/* #teacher {
-    width: 362px;
-    height: 362px;
-    background: url({% static "res/female%20teacher-01.png" %}); 
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-left: auto;
-} */
+
 
 .childti {
     width: 414px;
@@ -239,7 +220,7 @@ html {
 }
 
 
- /* NOT RESPONSIVE below this working on it.*/
+
 
  .teachParent{
      margin-top:10vh;
@@ -299,7 +280,7 @@ html {
     font-family: Quicksand;
     font-style: normal;
     /* font-weight: bold; */
-    font-size: 25px;
+    font-size: 40px;
     line-height: 45px;
     cursor: pointer;
     text-align: center;
@@ -428,9 +409,10 @@ align-items: center;
 
 
 
-@media all and (max-width:500px) and (orientation: portrait) {
+@media only screen and (max-width: 650px) {
     body{
         margin: 0;
+        max-width: 100vw;
     }
     
     
@@ -441,8 +423,8 @@ align-items: center;
     
     
     #navbar {
-        max-width: 100vw;
-        height: 90px;
+        
+        height: 70px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -454,10 +436,10 @@ align-items: center;
         font-family: Quicksand;
         font-style: normal;
         font-weight: bold;
-        font-size: 29px;
-        line-height: 36px;
+        font-size: 20px;
+        line-height: 25px;
         color: #5B5B5C;
-        margin-left: 42px;
+        margin-left: 21px;
     }
     
     #career {
@@ -465,41 +447,33 @@ align-items: center;
         font-family: Quicksand;
         font-style: normal;
         font-weight: normal;
-        font-size: 26px;
-        line-height: 33px;
+        font-size: 18px;
+        line-height: 25px;
         color: #000000;
-        margin-right: 42px;
+        margin-right: 21px;
     }
     
     .midback {
-        margin: 0 19vw;
+        margin: 0 12vw;
         display: flex;
         justify-content: center;
         flex-direction: column;
-        margin-top: 27vh;
-        /* width: 70vw;
-        min-height: 100vh; */
-        /* background-image: url('./res/glasses-01-01-01.png'); */
-        /* background-size: cover; */
-        /* background-repeat: no-repeat; */
+        margin-top: 20vh;
+        
     }
     .midback1{
-        margin: 0 19vw;
+        margin: 0 12vw;
         display: flex;
         justify-content: center;
         flex-direction: column;
-        margin-top: 27vh;
-        /* width: 70vw;
-        min-height: 100vh; */
-        /* background-image: url('./res/glasses-01-01-01.png'); */
-        /* background-size: cover; */
-        /* background-repeat: no-repeat; */
+        margin-top: 20vh;
+        
     }
     
     #backimage {
         position: absolute;
         height: auto;
-        width: 70vw;
+        width: 35vw;
         z-index: -1;
         
     }
@@ -507,7 +481,7 @@ align-items: center;
     .backimage1 {
         position: absolute;
         height: auto;
-        width: 70vw;
+        width: 35vw;
         z-index: -1;
         
        
@@ -516,8 +490,8 @@ align-items: center;
         font-family: Quicksand;
         font-style: normal;
         font-weight: normal;
-        font-size: 70px;
-        line-height: 120px;
+        font-size: 37px;
+        line-height: 70px;
         text-align: center;
     
         color: #5B5B5C;
@@ -527,8 +501,8 @@ align-items: center;
         font-family: Quicksand;
         font-style: normal;
         font-weight: normal;
-        font-size: 20px;
-        line-height: 27px;
+        font-size: 13px;
+        line-height: 20px;
         text-align: center;
         color: #636363;
     }
@@ -537,35 +511,35 @@ align-items: center;
         font-family: Quicksand;
         font-style: normal;
         font-weight: normal;
-        font-size: 40px;
-        line-height: 70px;
+        font-size: 22px;
+        line-height: 40px;
         text-align: center;
     }
     
     .register {
-        margin:18vh 00vw 18vh 00vw;
-        height: 280px;
+        margin:10vh 00vw 10vh 00vw;
+        height: 180px;
         background: #6CCECE;
         border-radius: 21px;
         display: flex;
         justify-content: space-around;
         flex-direction: column;
-        min-width: 350px;
+        min-width: 250px;
     }
     
    
     
     .inputtxt {
-        height: 43px;
+        height: 20px;
         font-family: Roboto;
         font-style: normal;
         font-weight: 300;
-        font-size: 20px;
-        margin: 0 15px;
+        font-size: 12px;
+        margin: 0 8px;
         /* text-align: center; */
         background: #FFFFFF;
         border-radius: 16px;
-        padding: 0px 10px;
+        padding: 0px 7px;
         border-color: #6CCECE;
         outline: none;
         border-width: 0;
@@ -588,18 +562,19 @@ align-items: center;
         font-family: Quicksand;
         font-style: normal;
         font-weight: bold;
-        font-size: 26px;
-        height: 46px;
+        font-size: 13px;
+        height: 25px;
         color: #FFFFFF;
         cursor: pointer;
         margin: 0 30px;
     }
     
     #info {
-        height: 736px;
+        
         background: #FFF9DC;
         border-radius: 70px;
         margin: 0 5vw;
+        height: 1000px;
     }
     
     #infotitle {
@@ -607,8 +582,8 @@ align-items: center;
         font-style: normal;
         font-weight: 500;
     
-        font-size: 70px;
-        line-height: 109px;
+        font-size: 22px;
+        line-height: 30px;
         text-align: center;
         color: #2C2C2C;
     }
@@ -617,74 +592,62 @@ align-items: center;
         display: flex;
         align-items: center;
         justify-content: space-around;
-    
+        flex-direction: column;
     }
     
-    /* #child {
-        width: 362px;
-        height: 362px;
-        background: url({% static "res/New%20subject%20kids-01.png" %}); 
-        background-repeat: no-repeat;
-        background-size: contain;
-        margin-left: auto;
-    } */
+    #child {
+        width: 152px;
+    height: 152px;
+    }
     
-    /* #teacher {
-        width: 362px;
-        height: 362px;
-        background: url({% static "res/female%20teacher-01.png" %}); 
-        background-repeat: no-repeat;
-        background-size: contain;
-        margin-left: auto;
-    } */
-    
+
     .childti {
-        width: 414px;
+        width: 200px;
         font-family: Quicksand;
         font-style: normal;
         font-weight: bold;
-        font-size: 30px;
-        line-height: 70px;
+        font-size: 15px;
+        line-height: 40px;
         text-align: center;
     
         color: #2C2C2C;
     }
     
     .childte {
-        width: 414px;
+        width: 214px;
         font-family: Quicksand;
         font-style: normal;
         font-weight: 300;
-        font-size: 25px;
-        line-height: 26px;
+        font-size: 16px;
+        line-height: 17px;
         text-align: center;
         color: #2C2C2C;
     }
     
     
-     /* NOT RESPONSIVE below this working on it.*/
+     
     
      .teachParent{
-         margin-top:10vh;
+         margin-top:7vh;
      }
     .teachtitle {
-        height: 105px;
+        height: 65px;
         font-family: Quicksand;
         font-style: bold;
         font-weight: 550;
-        font-size: 70px;
-        line-height: 109px;
+        font-size: 40px;
+        line-height: 79px;
         color: #FFCF2D;
         text-align: center;
     }
     .teachcontainer{
         display: flex;
         justify-content: space-around;
-        margin: 0 5vw;
+        margin: 0 3vw;
         flex-wrap: wrap;
     }
     .teachpic {
-        width: 559px;
+        width: 359px;
         height: auto;
     }
     
@@ -693,14 +656,14 @@ align-items: center;
         justify-content: space-around;
         flex-direction: column;
         align-items: center;
-        margin: 0 40px;
+        margin: 0 22px;
     }
     .teachtext {
         font-family: Quicksand;
         font-style: normal;
         font-weight: 500;
-        font-size: 25px;
-        line-height: 37px;
+        font-size: 17px;
+        line-height: 19px;
         text-align: center;
         color: #414141;
     }
@@ -709,8 +672,8 @@ align-items: center;
         font-family: Quicksand;
         font-style: normal;
         font-weight: normal;
-        font-size: 30px;
-        line-height: 49px;
+        font-size: 17px;
+        line-height: 25px;
         text-align: center;
     
         color: #000000;
@@ -723,24 +686,24 @@ align-items: center;
         font-family: Quicksand;
         font-style: normal;
         /* font-weight: bold; */
-        font-size: 35px;
-        line-height: 55px;
+        font-size: 17px;
+        line-height: 17px;
         cursor: pointer;
         text-align: center;
         color: #FFFFFF;
-        height: 40px;
-        width: 275px;
+        height: 20px;
+        width: 95px;
     }
     
      .socialparent{
-         margin-top:10vh;
+         margin-top:7vh;
      }
     .social {
         font-family: Quicksand;
         font-style: normal;
         font-weight: normal;
-        font-size: 25px;
-        line-height: 83px;
+        font-size: 15px;
+        line-height: 53px;
         text-align: center;
         color: #000000;
     }
@@ -749,24 +712,24 @@ align-items: center;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        margin:0 32vw;
+        margin:0 18vw;
     }
     
     .fb img, .ig img, .lin img, .tw  img {
-        width: 47.77px;
+        width: 27.77px;
     }
     
     
     hr {
-        margin:4vh 0;
+        margin:2vh 0;
     }
     
     .end {
     font-family: Quicksand;
     font-style: normal;
     font-weight: normal;
-    font-size: 25px;
-    line-height: 65px;
+    font-size: 17px;
+    line-height: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -776,21 +739,21 @@ align-items: center;
         font-family: Quicksand;
         font-style: normal;
         font-weight: normal;
-        font-size: 15px;
-        line-height: 31px;
+        font-size: 10px;
+        line-height: 21px;
         text-align: center;
         margin:2vh 0;
     }
     
     .joinus {
         position: fixed;
-        width: 361px;
-        height: 447px;
+        width: 261px;
+        height: 247px;
         background: #6CCECE;
         border-radius: 21px;
         margin-top: 10%;
         margin-left: 40%;
-        border: 3px solid #f1f1f1;
+        border: 1px solid #f1f1f1;
         display: none;
         z-index: 10;
     }
@@ -807,24 +770,24 @@ align-items: center;
         font-family: Roboto;
         font-style: normal;
         font-weight: bold;
-        font-size: 40px;
-        line-height: 47px;
+        font-size: 22px;
+        line-height: 27px;
         text-align: center;
         color: #FFFFFF;
     }
     
     .inpdata {
     
-        width: 333.79px;
-        height: 55.33px;
+        width: 233.79px;
+        height: 35.33px;
     
         background: #FFFFFF;
         border-radius: 16px;
         font-family: Roboto;
         font-style: normal;
         font-weight: 300;
-        font-size: 20px;
-        line-height: 23px;
+        font-size: 12px;
+        line-height: 16px;
         margin-top: 2%;
         margin-left: 2%;
         text-align: center;
@@ -833,15 +796,15 @@ align-items: center;
     
     .subdata {
     
-        width: 182.68px;
-        height: 40.73px;
+        width: 102.68px;
+        height: 30.73px;
         background: #FB5607;
         border-radius: 18.5px;
         font-family: Roboto;
         font-style: normal;
         font-weight: bold;
-        font-size: 29px;
-        line-height: 34px;
+        font-size: 19px;
+        line-height: 20px;
         text-align: center;
         color: #FFFFFF;
         margin-left: 25%;

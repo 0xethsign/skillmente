@@ -594,14 +594,14 @@ align-items: center;
         background: #FFF9DC;
         border-radius: 10px;
         margin: 0 2vw;
-        height: 765px;
+        height: 770px;
     }
     
     #infotitle {
         font-family: Quicksand;
         font-style: normal;
         font-weight: 500;
-    
+        margin-top: 10px;
         font-size: 32px;
         line-height: 50px;
         text-align: center;

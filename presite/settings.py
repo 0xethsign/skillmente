@@ -74,7 +74,7 @@ WSGI_APPLICATION = 'presite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'custutDB',
+        'NAME': 'custutdb',
         'USER': 'smrpn',
         'PASSWORD': '6MXWty3uk7PYfng',
         'HOST': 'localhost',

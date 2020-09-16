@@ -13,7 +13,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'g@vlaj!4)6i15+hy@z=c@q(ug54&@i)+)t*ogs=3^nd0je*5z9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 ALLOWED_HOSTS = ['skillmente.com', '139.59.4.178']
 
 
@@ -64,7 +64,7 @@ WSGI_APPLICATION = 'presite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-# if DEBUG:
+
 #     DATABASES = {
 #         'default': {
 #             'ENGINE': 'django.db.backends.sqlite3',
